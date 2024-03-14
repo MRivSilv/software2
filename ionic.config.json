@@ -1,0 +1,7 @@
+{
+  "name": "pjangular",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
