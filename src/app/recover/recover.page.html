@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Recuperar Contraseña</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-label position="stacked">Correo Electrónico</ion-label>
+    <ion-input type="email" [(ngModel)]="email" required></ion-input>
+  </ion-item>
+
+  <ion-button expand="block" (click)="recoverPassword()">Enviar</ion-button>
+
+  <ion-item *ngIf="message">
+    <ion-label class="ion-text-center">{{ message }}</ion-label>
+  </ion-item>
+</ion-content>
